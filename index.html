@@ -95,6 +95,12 @@
 			<input type="text" id="copies" placeholder="1">
 			<br><br>
 			
+			<div class="button-group">
+            <button onclick="downloadTemplate()">Download Template</button>
+            <button onclick="window.location.href='https://apps.apple.com/us/app/smooth-print/id1629559918'">Smooth Print for iOS</button>
+            <button onclick="window.location.href='https://support.brother.com/g/b/agreement.aspx?dlid=dlfp101087_000&c=eu_ot&lang=en'">Smooth Print for Android</button>
+			</div>
+		
         <button onclick="showSummary()">Preview</button>
         <div id="summary" class="section"></div>
         <div class="buttons">
@@ -126,7 +132,6 @@
 
             document.getElementById('summary').innerHTML = summary;
             document.getElementById('printButton').style.display = 'block';
-            //document.getElementById('previewButton').style.display = 'block';
         }
 
         function sendToPrint() {
@@ -148,7 +153,6 @@
 			const text1 = document.getElementById("text1Object").value;
             const text2 = document.getElementById("text2Object").value;
 			const copies = document.getElementById('copies').value;
-			//const copies = document.getElementById('text3Object').value;
 			return `brotherwebprint://print?filename=HACCP50x55mm.lbx&size=HACCP50x55mm.bin&text_text1=${encodeURIComponent(text1)}&text_text2=${encodeURIComponent(text2)}&text_creatorName=${encodeURIComponent(creatorName)}&text_productName=${encodeURIComponent(productName)}&text_allergens=${encodeURIComponent(allergens)}&copies=${copies}`;
         }
 
