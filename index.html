@@ -118,7 +118,7 @@
 			<label for="copies" id="copies"> Copies:</label><br>
 			<input type="text" id="copies" placeholder="1">
 			<br><br>
-				
+            <button id="printButton" style="display:none;" onclick="sendToPrint()">Print label</button>
         <button onclick="showSummary()">Preview label data</button>
         <div id="summary" class="section"></div>
         <div class="buttons">
@@ -129,12 +129,12 @@
         <div id="urlScheme" class="url-scheme" style="display:none;">
             <h3>Smooth Print URL Scheme</h3>
             <p id="urlSchemeText"></p>
-        </div>
-		<br>
-			<div class="button-group">
+        </div><br>
+		
+		<div class="button-group">
             <button onclick="window.location.href='https://apps.apple.com/us/app/smooth-print/id1629559918'">Download Smooth Print for iOS</button>
             <button onclick="window.location.href='https://support.brother.com/g/b/agreement.aspx?dlid=dlfp101087_000&c=eu_ot&lang=en'">Download Smooth Print for Android</button>
-			</div>
+		</div>
 			
     </div>
     <script>
@@ -188,8 +188,8 @@
 			document.getElementById('text2').value = '';
             document.querySelectorAll('input[name="allergens"]').forEach(checkbox => checkbox.checked = false);
             document.getElementById('summary').innerHTML = '';
-            //document.getElementById('printButton').style.display = 'none';
-            //document.getElementById('previewButton').style.display = 'none';
+            document.getElementById('printButton').style.display = 'none';
+            document.getElementById('previewButton').style.display = 'none';
             document.getElementById('copies').value = 1;
 			document.getElementById('urlScheme').style.display = 'none';
         }
