@@ -184,11 +184,11 @@
         function resetInputs() {
             document.getElementById('creatorName').value = '';
             document.getElementById('productName').value = '';
-			document.getElementById('text1Object').value = '';
-			document.getElementById('text2Object').value = '';
+			document.getElementById('text1').value = '';
+			document.getElementById('text2').value = '';
             document.querySelectorAll('input[name="allergens"]').forEach(checkbox => checkbox.checked = false);
             document.getElementById('summary').innerHTML = '';
-            document.getElementById('printButton').style.display = 'none';
+            //document.getElementById('printButton').style.display = 'none';
             document.getElementById('previewButton').style.display = 'none';
             document.getElementById('copies').value = 1;
 			document.getElementById('urlScheme').style.display = 'none';
