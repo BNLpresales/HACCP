@@ -172,8 +172,8 @@
 			const copies = document.getElementById('copies').value;
 			return `brotherwebprint://print?filename=HACCP50x55mm.lbx&size=HACCP50x55mm.bin&text_text1=${encodeURIComponent(text1)}&text_text2=${encodeURIComponent(text2)}&text_creatorName=${encodeURIComponent(creatorName)}&text_productName=${encodeURIComponent(productName)}&text_allergens=${encodeURIComponent(allergens)}&copies=${copies}&rotate=Rotate180`;
 			
-			// Open the generated URL in a new window as test to see if URL is correct for number of copies
-		    window.open(url, '_blank');
+			// debug window    Open the generated URL in a new window as test to see if URL is correct for number of copies
+		    //window.open(url, '_blank');
 		}
 
         function resetInputs() {
