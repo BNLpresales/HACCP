@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brother HACCP demo</title>
+    <title>Brother HACCP 50x55mm demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,7 +50,7 @@
 <body>
     <div class="container">
         <img src="Bluebar.jpg" alt="Logo" class="logo">
-        <h1>Brother HACCP demo</h1>
+        <h1>Brother HACCP 50x55mm demo</h1>
 		
 		<div class="section">
             <input type="text" id="creatorName" placeholder="Fill in your name">
@@ -169,7 +169,7 @@
 			const text1 = document.getElementById("text1Object").value;
             const text2 = document.getElementById("text2Object").value;
 			const copies = document.getElementById('copies').value;
-			return `brotherwebprint://print?filename=HACCP50x55mm.lbx&size=HACCP50x55mm.bin&text_text1=${encodeURIComponent(text1)}&text_text2=${encodeURIComponent(text2)}&text_creatorName=${encodeURIComponent(creatorName)}&text_productName=${encodeURIComponent(productName)}&text_allergens=${encodeURIComponent(allergens)}&copies=${copies}&rotate=Rotate180`;
+			return `brotherwebprint://print?filename=HACCP50x55mm.lbx&size=HACCP50x55mm.bin&text_text1=${encodeURIComponent(text1)}&text_text2=${encodeURIComponent(text2)}&text_creatorName=${encodeURIComponent(creatorName)}&text_productName=${encodeURIComponent(productName)}&text_allergens=${encodeURIComponent(allergens)}&copies=${copies}`;
         }
 
         function resetInputs() {
